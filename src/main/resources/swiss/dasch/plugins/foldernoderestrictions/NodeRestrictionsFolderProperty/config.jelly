@@ -1,0 +1,15 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:section title="${%FolderNodeRestrictionsPlugin}">
+    <f:optionalBlock title="${%EnableAllowedLabels}" field="enableAllowedLabels" inline="true">
+      <f:entry title="${%AllowedLabels}" field="allowedLabels">
+        <f:textbox checkMethod="post"/>
+      </f:entry>
+    </f:optionalBlock>
+    <f:optionalBlock title="${%EnableDisallowedLabels}" field="enableDisallowedLabels" inline="true">
+      <f:entry title="${%DisallowedLabels}" field="disallowedLabels">
+        <f:textbox checkMethod="post"/>
+      </f:entry>
+    </f:optionalBlock>
+  </f:section>
+</j:jelly>
